@@ -3,9 +3,8 @@ import React, { Component } from 'react'
 
 export default class Single extends Component {
   constructor(props){
-    super(props)
-    this.props = props
-
+    super()
+    
   }
   render() {
     const {name, age, skill, img, index, layout} = this.props
