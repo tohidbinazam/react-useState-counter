@@ -3,16 +3,18 @@ import React, { Component } from 'react'
 
 export default class Single extends Component {
   constructor(props){
-    super()
+    super();
+    this.props = props
     
   }
+  
   render() {
     const {name, age, skill, img, index, layout} = this.props
 
     return (
       <>
       <div className="col-lg-3 my-3">
-          <div className={'team-member ' + layout}>
+          <div className={`team-member ${layout}`}>
               <div className="card shadow-sm">
               <img className="card-img-top" src={ img } alt={ index }/>
               <div className="card-body">
